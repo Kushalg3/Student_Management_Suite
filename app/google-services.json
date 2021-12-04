@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "523426281655",
+    "project_id": "sifo-d22b0",
+    "storage_bucket": "sifo-d22b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:523426281655:android:2c85b972259356771db532",
+        "android_client_info": {
+          "package_name": "com.example.studentmanagementsuite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "523426281655-vs3a1paf4k1qtm1pjall1srhbl47npsp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRow9dtnXJMFyj9DbnEueiYl2mzAOJ6FA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "523426281655-vs3a1paf4k1qtm1pjall1srhbl47npsp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

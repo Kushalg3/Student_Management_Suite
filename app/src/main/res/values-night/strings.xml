@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="student">Student</string>
+    <string name="teacher">Teacher</string>
+    <string name="administrator">Administrator</string>
+    <string name="students">Students</string>
+</resources>

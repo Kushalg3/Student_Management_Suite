@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECF0F3"
+    android:orientation="vertical"
+    android:weightSum="9"
+    tools:context=".AdminLogin">
+
+    <LinearLayout
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:layout_weight="1">
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="@dimen/_52sdp"
+                android:layout_height="@dimen/_48sdp"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_gravity="center"
+                app:background_color="#ECF0F3">
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_icons8_polymer"
+                    android:contentDescription="@string/logo" />
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_weight="1">
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="2.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/neumorphCardView2"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.144"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="81dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/student"
+                    android:src="@drawable/ic_admin_icon" />
+            </soup.neumorphism.NeumorphCardView>
+
+            <TextView
+                android:id="@+id/admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="top"
+                android:text="@string/administrator"
+                android:textAppearance="@style/students"
+                android:textColor="#ff7200"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/neumorphCardView2"
+                app:layout_constraintVertical_bias="0.162" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:neumorph_shapeType="pressed"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/email2"
+                    android:layout_width="261dp"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_mail"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#857E7E"
+                    android:textColorHint="#857E7E" />
+            </soup.neumorphism.NeumorphCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:neumorph_shapeType="pressed"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/password2"
+                    android:layout_width="261dp"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textColor="#857E7E"
+                    android:textColorHint="#857E7E" />
+            </soup.neumorphism.NeumorphCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/login_button3"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="145dp"
+                android:layout_height="80dp"
+                android:clickable="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:neumorph_backgroundColor="#ECF0F3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/log_in"
+                    android:textColor="#857E7E"
+                    android:textSize="@dimen/_19ssp" />
+            </soup.neumorphism.NeumorphCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1.7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                style="@style/Widget.Neumorph.CardView"
+                app:neumorph_shapeType="pressed"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.052"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.733" >
+                <soup.neumorphism.NeumorphImageButton
+                    android:id="@+id/backbtn2"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    style="@style/Widget.Neumorph.ImageButton"
+                    android:src="@drawable/ic_back_button"
+                    android:layout_gravity="center"/>
+            </soup.neumorphism.NeumorphCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

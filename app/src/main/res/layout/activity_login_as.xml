@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ECF0F3"
+    android:weightSum="11"
+    android:id="@+id/mainlogin"
+    tools:context=".LoginAs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center">
+
+        <soup.neumorphism.NeumorphCardView
+            android:layout_width="175dp"
+            android:layout_height="140dp"
+            style="@style/Widget.Neumorph.CardView"
+            app:background_color="#ECF0F3">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="173dp"
+                android:layout_height="135dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_icons8_polymer"
+                android:contentDescription="@string/logo" />
+
+        </soup.neumorphism.NeumorphCardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.95"
+        android:gravity="center">
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/student_login"
+            style="@style/Widget.Neumorph.ImageButton"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_student_icon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/student"
+            android:textColor="#ff7200"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.95"
+        android:gravity="center">
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/teacherLogo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            style="@style/Widget.Neumorph.ImageButton"
+            android:src="@drawable/ic_teacher_icon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/teacherText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/teacher"
+            android:textColor="#ff7200"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.95"
+        android:gravity="center">
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/adminLogo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            style="@style/Widget.Neumorph.ImageButton"
+            android:src="@drawable/ic_admin_icon"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/adminText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/administrator"
+            android:textColor="#ff7200"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".64"
+        android:gravity="bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Powered by Pailan College of Management and Technology"/>
+    </LinearLayout>
+
+
+</LinearLayout>

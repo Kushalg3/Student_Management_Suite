@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8"
+    android:background="#ECF0F3"
+    tools:context=".StudentDeck">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:layout_weight="1">
+            <soup.neumorphism.NeumorphCardView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_45sdp"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_gravity="center"
+                app:background_color="#ECF0F3">
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_icons8_polymer"
+                    android:contentDescription="@string/logo" />
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:layout_weight="1">
+            <soup.neumorphism.NeumorphImageButton
+                android:id="@+id/home_button"
+                android:layout_width="@dimen/_52sdp"
+                style="@style/Widget.Neumorph.ImageButton"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+                android:layout_height="@dimen/_52sdp"
+                android:src="@drawable/ic_home"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:text="@string/hello"
+                android:textColor="#808283"
+                android:textSize="@dimen/_30ssp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Kushal"
+                android:textColor="#ff7200"
+                android:textSize="@dimen/_30ssp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/neumorphCardView4"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                app:neumorph_shapeAppearance="@style/CustomShapeAppearance">
+
+                <ImageView
+                    android:layout_width="@dimen/_52sdp"
+                    android:layout_height="@dimen/_62sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_student_dash" />
+
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1.13"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/attedence"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_85sdp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_14sdp"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:src="@drawable/ic_attendence" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/attendence"
+                    android:textColor="#808283" />
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/neumorphCardView5"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_85sdp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_admit_card"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingLeft="@dimen/_14sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/admit_card"
+                    android:textColor="#808283" />
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1.13"
+        android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/neumorphCardView3"
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_85sdp"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_study_materials"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingLeft="@dimen/_14sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/study_material"
+                    android:textColor="#808283" />
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_85sdp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:src="@drawable/ic_result" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/result"
+                    android:textColor="#808283" />
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="horizontal"
+    android:layout_weight="1.13"
+    android:weightSum="2">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_85sdp"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_fees_book"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingLeft="@dimen/_14sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/fees_book"
+                    android:textColor="#808283" />
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_85sdp"
+                android:clickable="true">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_about"
+                    android:paddingTop="@dimen/_9sdp"
+                    android:paddingLeft="@dimen/_14sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingStart="@dimen/_14sdp"
+                    android:paddingEnd="@dimen/_14sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/about"
+                    android:textColor="#808283" />
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center">
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/logout_button"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="145dp"
+            android:layout_height="80dp"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/log_out"
+                android:textColor="#857E7E"
+                android:textSize="@dimen/_19ssp" />
+        </soup.neumorphism.NeumorphCardView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

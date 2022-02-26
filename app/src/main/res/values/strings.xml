@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Student Management Suite</string>
+    <string name="student">Student</string>
+    <string name="teacher">Teacher</string>
+    <string name="administrator">Administrator</string>
+    <string name="logo">Logo</string>
+    <string name="email">Email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="students">Students</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log in</string>
+    <string name="hello">Hello,</string>
+    <string name="log_out">Log out</string>
+    <string name="attendence">Attendence</string>
+    <string name="admit_card">Admit Card</string>
+    <string name="study_material">Class Notes</string>
+    <string name="result">Result</string>
+    <string name="fees_book">Fees Book</string>
+    <string name="about">About</string>
+    <string name="kushal_nghosh">Kushal\nGhosh</string>
+    <string name="attend_overview">Attendence Overview</string>
+    <string name="assignments">Assignments</string>
+    <string name="get_details">Get Details</string>
+    <string name="add_users">Add Users</string>
+    <string name="manage_users">Manage\nUsers</string>
 </resources>
